@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://poi7ytqsift2"]
+
+[ext_resource type="PackedScene" uid="uid://bgveym6k57qi8" path="res://electron.tscn" id="1_6u8ux"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_mc8ht"]
+distance = -82.0
+
+[node name="Game" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(4, 4)
+
+[node name="Electron" parent="." instance=ExtResource("1_6u8ux")]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+shape = SubResource("WorldBoundaryShape2D_mc8ht")
