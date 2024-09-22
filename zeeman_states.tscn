@@ -1,0 +1,19 @@
+[gd_scene load_steps=2 format=3 uid="uid://fojrtpwqeph8"]
+
+[ext_resource type="PackedScene" uid="uid://btvsnigfhgste" path="res://platform.tscn" id="1_neem8"]
+
+[node name="ZeemanStates" type="Node2D"]
+
+[node name="g0" parent="." instance=ExtResource("1_neem8")]
+position = Vector2(60, 66)
+direction = false
+
+[node name="g1" parent="." instance=ExtResource("1_neem8")]
+position = Vector2(60, 64)
+
+[node name="s0" parent="." instance=ExtResource("1_neem8")]
+position = Vector2(60, -28)
+direction = false
+
+[node name="s1" parent="." instance=ExtResource("1_neem8")]
+position = Vector2(60, -30)

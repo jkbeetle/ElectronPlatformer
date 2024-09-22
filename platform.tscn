@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://btvsnigfhgste"]
+
+[ext_resource type="Script" path="res://platform_zeeman.gd" id="1_1ksrr"]
+[ext_resource type="Texture2D" uid="uid://duxr81tx64435" path="res://wip/world.png" id="1_erbc1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ousl4"]
+size = Vector2(38, 4)
+
+[node name="Platform" type="AnimatableBody2D"]
+script = ExtResource("1_1ksrr")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_erbc1")
+region_enabled = true
+region_rect = Rect2(21.9717, 11.7093, 38.2573, 4.29074)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_ousl4")
+one_way_collision = true

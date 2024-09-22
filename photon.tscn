@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://qnmbifn443uk"]
+
+[ext_resource type="Script" path="res://photon.gd" id="1_1sfgp"]
+[ext_resource type="Texture2D" uid="uid://hr0cdhivytld" path="res://photon.png" id="1_h6e60"]
+
+[node name="Photon" type="CharacterBody2D"]
+script = ExtResource("1_1sfgp")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_h6e60")
